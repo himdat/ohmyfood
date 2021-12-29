@@ -1,12 +1,50 @@
- :root {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
     --violet: #9356DC;
     --rose: #FF79DA;
     --bleu: #99E2D0;
 
  }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+ /*header */
+
+.logo img{
+    width: 50%;
+    height: 50%;
+    margin: 8% 0% 0% 25%;
+    
+ }
+
+ /* section ville*/
+
+.allville{
+    display: flex;
+    margin: 5% 0% 10% 25%;    
+    background-color: #ececec;
+    padding-block: 5%;
+    border-top: solid gray;
+    
+
 }
+
+.capital h2{
+    font-size: 110%;      
+} 
+
+.map {
+    margin-right: 7%;
+    
+}  
+
+/* la couleur du fond */
+ .ville{
+    background-color: #ececec;
+    
+    
+    
+}   
