@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
-
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.mobile.css">
 </head>
 <body>
     <header>
@@ -49,7 +48,6 @@
             <h2>Fonctionnement</h2>
         </div>
         <section class="fonctionnement">
-            <!-- fin titre -->
             <div class="choix-restaurant">
                 <div class="numero">
                     <p>1</p>
@@ -90,27 +88,27 @@
                 </div>
                 <!-- fin phone -->
                 <div class="choix">
-                    <h4>Composer votre menu</h4>
+                    <h4>Dégustez au restaurant</h4>
                 </div>
             </div>
-            <!-- fin composez-menu -->
+            <!-- fin Dégustez au restaurant -->
         </section>
         <!-- fin fonctionnement -->
 
         <section class="restaurant">
             <div class="titre">
                 <h2>Restaurants</h2>
-            </div>
+            </div> 
             <div class="all-card">
+                <div class="etiquette">
+                    <p>Nouveau</p>
+                </div>
                 <div class="card">
                     <div class="img">
-                        <div class="etiquette">
-                            <p>Nouveau</p>
-                        </div>
-                        <img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
+                        <a href="#"><img src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût"></a>
                     </div>
                     <!-- fin div img -->
-                    <div class="description">
+                    <div class="description2">
                         <div class="titre">
                             <h4>La palette du goût</h4>
                             <p>Ménilmontant</p>
@@ -124,16 +122,12 @@
                     <!-- fin description -->
                 </div>
                 <!-- fin card 1 -->
-             
                 <div class="card">
                     <div class="img">
-                        <div class="etiquette">
-                            <p>Nouveau</p>
-                        </div>
-                        <img src="img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note echantée">
+                        <a href="#"><img src="img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note echantée"></a>
                     </div>
                     <!-- fin div img -->
-                    <div class="description">
+                    <div class="description2">
                         <div class="titre">
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
@@ -147,14 +141,15 @@
                     <!-- fin description -->
                 </div>
                 <!-- fin card 2 -->
-             
-             
                 <div class="card">
                     <div class="img">
-                       <img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                        <a href="#"><img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"></a>
                     </div>
                     <!-- fin div img -->
-                    <div class="description">
+                    <div class="etiquette1">
+                        <p>Nouveau</p>
+                    </div>
+                    <div class="description2">
                         <div class="titre">
                             <h4>A la française</h4>
                             <p>Cité Rouge</p>
@@ -171,10 +166,10 @@
              
                 <div class="card">
                     <div class="img">
-                       <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                        <a href="#"><img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></a>
                     </div>
                     <!-- fin div img -->
-                    <div class="description">
+                    <div class="description2">
                         <div class="titre">
                             <h4>Le délice des sens</h4>
                             <p>Folie-Méricourt</p>
@@ -195,7 +190,7 @@
     <!-- fin container -->
     <footer>
        <div class="logof">
-           <img src="/img/ohmyfood.png" alt="logo">
+          <h3>ohmyfood</h>
        </div>
        <!-- fin logo -->
        <div class="proposition">
@@ -217,6 +212,7 @@
         </div>
     </div>
     <!-- fin proposition -->
+
     <div class="mention">
         <a href="#">Mentions légales</a>
     </div>
