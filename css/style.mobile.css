@@ -19,6 +19,8 @@
 
 
     /* section ville */
+    
+    /* bande grise hauteur */
     .ville{
         display: flex;
         justify-content: center;
@@ -28,13 +30,14 @@
         padding-bottom: 15px;
     }
 
+    /* logo map */
     .map{
         margin-right: 15px;
     }
 
-    
-
     /* section reservation */
+
+    /* gros fond gris */
     .reservation{
         background: #f6f6f6;
         padding-bottom: 50px;
@@ -77,9 +80,8 @@
         font-weight: 600;
     }
 
-
-
     /* section fonctionnement */
+    
      .titre-fonctionnement{
         padding-top: 40px;
         padding-left: 20px;
@@ -121,9 +123,8 @@
         font-size: 18px;
     }
 
-    
-
     /* section restaurant */
+    
     .restaurant{
         background: #f6f6f6;
         margin-top: 20%;
@@ -191,6 +192,7 @@
         border-radius: 2px;
         color: #238064;
     }
+
     .etiquette1{
         display: flex;
         justify-content: flex-end;
@@ -202,10 +204,10 @@
      .heart i{
         font-size: 25px
     }
-    
-    
+      
 
     /* footer */
+
     footer {
         background-color: #353535;
         color:white ;
@@ -249,8 +251,6 @@
 
  }
 
-
-
  /* tablette */
 @media (min-width:768px) and (max-width:991px){
 
@@ -272,6 +272,7 @@
 
 
     /* section ville */
+
     .ville{
         display: flex;
         justify-content: center;
@@ -288,6 +289,7 @@
     
 
     /* section reservation */
+
     .reservation{
         background: #f6f6f6;
         padding-bottom: 50px;
