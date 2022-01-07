@@ -1,0 +1,517 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: #9356DC ;
+    --rose:#FF79DA;
+    --bleu:#99E2D0;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  
+    /* pc */
+  @media (min-width:991px){
+     /* header */
+     header{
+        display: flex;
+       justify-content: center;
+    }
+  
+    .logo{
+        display: flex;
+       align-items: center;
+        padding: 15px 20px 10px 20px;
+    }
+  
+    .logo h1{
+        font-family: "Shrikhand", cursive;
+    }
+  
+  
+    .logo a{
+        /* padding-right: 60px;  */
+        position: absolute;
+        left: 5%;
+        color: black;
+    } 
+  
+  
+       /* section menu */
+       .container{
+        background-color: #f6f6f6;
+       }
+
+       .img img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+    h2{
+        font-family: "Shrikhand", cursive;
+    }
+  
+     .titre{
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .titre .icone{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        /* padding-left: 25%; */
+        font-size: 25px;
+        padding-right: 10%;
+    }
+  
+  
+    .menu{
+        padding-top: 4%;
+        padding-left: 5%;
+        border-radius: 50px 50px 0 0;
+        background-color: #f6f6f6;
+        position: relative;
+        bottom: 130px;
+    }
+  
+    .titre2{
+        padding-top: 2%;
+        padding-bottom:2%;
+    }
+  
+     .titre2 p{
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+  
+  
+    .choix{
+        display: flex;
+        background: #ffffff;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 10px 20px 10px 10px;
+        width: 94%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    }
+  
+    .description{
+        line-height: 150%; /*espace entre le h4 et */
+    }
+  
+    .choix .prix{
+        font-weight: 600;
+        align-self: flex-end;  /* pour le mettre le prix en bas */
+    }
+  
+    
+    .button{
+        text-align: center;
+        padding-top: 25px;
+        padding-right: 3%;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 16px 50px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
+  
+    .button a{
+        text-decoration: none;
+        color: white;
+    }
+  
+  
+    /* footer */
+    footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+  
+    .logof h3{
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+  
+    .proposition{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+  
+    .mention{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+  
+    .proposition .icone{
+        font-size: 12px;
+    }
+  
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+  
+    .lien a{
+        padding-left: 13px;
+    }
+    
+  }
+
+
+
+
+    /* mobile */
+@media (max-width:767px){
+    /* header */
+    header{
+        display: flex;
+       justify-content: center;
+    }
+  
+    .logo{
+        display: flex;
+       align-items: center;
+        padding: 15px 20px 10px 20px;
+    }
+
+    .logo h1{
+        font-family: "Shrikhand", cursive;
+    }
+
+
+    .logo a{
+        /* padding-right: 60px;  */
+        position: absolute;
+        left: 5%;
+        color: black;
+    } 
+
+
+       /* section menu */
+       .container{
+        background-color: #f6f6f6;
+       }
+       .container img{
+        width:100%;
+    }
+
+    h2{
+        font-family: "Shrikhand", cursive;
+    }
+
+     .titre{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titre .icone{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        /* padding-left: 25%; */
+        font-size: 25px;
+        padding-right: 10%;
+    }
+
+    
+   
+
+    .menu{
+        padding-top: 10%;
+        padding-left: 5%;
+        border-radius: 50px 50px 0 0;
+        background-color: #f6f6f6;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .titre2{
+        padding-top: 8%;
+        padding-bottom:4%;
+    }
+
+     .titre2 p{
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .choix{
+        display: flex;
+        background: #ffffff;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 10px 20px 10px 10px;
+        width: 94%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    }
+
+    .description{
+        line-height: 150%; /*espace entre le h4 et */
+    }
+
+    .choix .prix{
+        font-weight: 600;
+        align-self: flex-end;  /* pour le mettre le prix en bas */
+    }
+
+    
+    .button{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 16px 50px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
+
+    .button a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+     /* footer */
+     footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logof h3{
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+
+    .proposition{
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .mention{
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+
+    .proposition .icone{
+        font-size: 12px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .lien a{
+        padding-left: 13px;
+    }
+
+ }
+
+
+ /* tablette */
+@media (min-width:768px) and (max-width:991px){
+       /* header */
+       header{
+        display: flex;
+       justify-content: center;
+    }
+  
+    .logo{
+        display: flex;
+       align-items: center;
+        padding: 15px 20px 10px 20px;
+    }
+
+    .logo h1{
+        font-family: "Shrikhand", cursive;
+    }
+
+
+    .logo a{
+        /* padding-right: 60px;  */
+        position: absolute;
+        left: 5%;
+        color: black;
+    } 
+
+
+       /* section menu */
+       .container{
+        background-color: #f6f6f6;
+       }
+       .container img{
+        width: 100%;
+    }
+    h2{
+        font-family: "Shrikhand", cursive;
+    }
+
+     .titre{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titre .icone{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        /* padding-left: 25%; */
+        font-size: 25px;
+        padding-right: 10%;
+    }
+
+    
+   
+
+    .menu{
+        padding-top: 10%;
+        padding-left: 5%;
+        border-radius: 50px 50px 0 0;
+        background-color: #f6f6f6;
+        position: relative;
+        bottom: 110px;
+    }
+
+    .titre2{
+        padding-top: 8%;
+        padding-bottom:4%;
+    }
+
+     .titre2 p{
+        border-bottom: 3px solid #99E2D0;
+        padding-bottom: 5px;
+        width: 40px;
+    }
+
+    .choix{
+        display: flex;
+        background: #ffffff;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 10px 20px 10px 10px;
+        width: 94%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    }
+
+    .description{
+        line-height: 150%; /*espace entre le h4 et */
+    }
+
+    .choix .prix{
+        font-weight: 600;
+        align-self: flex-end;  /* pour le mettre le prix en bas */
+    }
+
+    
+    .button{
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 16px 50px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
+
+    .button a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    /* footer */
+    footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logof h3{
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+
+    .proposition{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .mention{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+
+    .proposition .icone{
+        font-size: 12px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .lien a{
+        padding-left: 13px;
+    }
+
+ }
+
+
