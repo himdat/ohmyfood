@@ -1,841 +1,863 @@
 /* reset */
 *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --violet: #9356DC ;
-  --rose:#FF79DA;
-  --bleu:#99E2D0;
+    --violet: #9356DC ;
+    --rose:#FF79DA;
+    --bleu:#99E2D0;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+   .heart:hover .empty{
+    animation: full 350ms ease-in-out forwards alternate;
 }
+@keyframes full{
+  
+    100% {
+        font-weight: 900; 
+        /*niveaux de graisse à l'interieur du coeur*/
+        background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
+        /* linear-gradient = dégradé. */
+        background-clip: text;
+        /* met la couleur uniquement dans le coeur */
+        -webkit-text-fill-color: transparent; 
+        /* remplace la couleur noir à l'interieur du coeur */
+        
+    }
+}         
 
-body{
-  font-family: 'Roboto', sans-serif;
-}
+    /* pc */
+  @media (min-width:991px){
+      /* header */
+    header{
+        border-bottom: 2px solid rgb(206, 206, 206);
+        box-shadow: 0px 2px 2px #bdbdbd;
+    }
+     .logo img{
+        width: 140px;
+    }
 
-
-  /* pc */
-@media (min-width:991px){
-    /* header */
-  header{
-      border-bottom: 2px solid rgb(206, 206, 206);
-      box-shadow: 0px 2px 2px #bdbdbd;
-  }
-   .logo img{
-      width: 140px;
-  }
-
-  .logo{
-      display: flex;
-     justify-content: center;
-      padding: 15px;
-  }
+    .logo{
+        display: flex;
+       justify-content: center;
+        padding: 15px;
+    }
 
 
 
-  /* section ville */
-  .ville{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 15px;
-      background:#eaeaea ;
-      padding-bottom: 15px;
-  }
+    /* section ville */
+    .ville{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        background:#eaeaea ;
+        padding-bottom: 15px;
+    }
 
-  .map{
-      margin-right: 15px;
-  }
+    .map{
+        margin-right: 15px;
+    }
+
+    
+
+    /* section reservation */
+    .reservation{
+        background: #f6f6f6;
+        padding-bottom: 50px;
+    }
+    
+    .reservation .titre{
+         /* décalement de la 2e ligne du titre avec text align et width */
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        padding-top: 40px;
+    }
+
+    .description p{
+        /* décalement de la 2e ligne du titre avec text align et width */
+        padding-top: 10px;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 14px 14px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
+
+
+
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
+
+
+
+    /* section fonctionnement */
+
+    .fonctionnement {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        padding-top: 25px;
+         padding-left: 30px;
+    }
+
+    .choix-restaurant:hover{
+      background-color: #f5edff;
+    }
+
+
+    .choix-restaurant:hover
+    .icone{
+      color: var(--violet);
+    }
+
+
+     .titre-fonctionnement{
+        padding-top: 40px;
+        padding-left: 20px;
+        text-align: center;
+    }
 
   
+    .choix-restaurant{
+        display: flex;
+        background: #f6f6f6;
+        border: 1px solid #f6f6f6 ;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 25px 5px 20px 5px;
+        width: 22%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+        flex-wrap: wrap;
+    }
 
-  /* section reservation */
-  .reservation{
-      background: #f6f6f6;
-      padding-bottom: 50px;
-  }
-  
-  .reservation .titre{
-       /* décalement de la 2e ligne du titre avec text align et width */
+     .numero p{
+         border: 1px solid var(--violet) ;
+         background: var(--violet);
+         color: white;
+         border-radius: 50%;
+         padding: 2px 8px 2px 8px;
+         position: relative;
+         right: 15px;
+    }
+
+    .choix-restaurant .icone{
+        color: #939393;
+        padding-left: 10px;
+        padding-right: 25px;
+        font-size: 20px;
+    }
+
+    .choix h4{
+        font-size: 18px;
+    }
+
+    
+
+    /* section restaurant */
+    .restaurant{
+        background: #f6f6f6;
+        margin-top: 8%;
+        padding-bottom: 5%;
+    }
+    .restaurant h2{
       text-align: center;
-      margin: auto;
-      width: 70%;
-      padding-top: 40px;
+        padding-left: 20px;
+        padding-top: 8%;
+    }
+
+    .img img{
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .description2{
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding: 10px 25px 15px 0px;
+        border-radius: 10px;
+    }
+
+    .description2 .titre{
+        padding-left: 20px;
+    }
+
+
+    .card{
+    margin: 0px 20px 60px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    border-radius: 10px;
+    }  
+
+    .etiquette p {
+        border: 1px solid var(--bleu);
+        background-color: var(--bleu);
+        color: #0A8D6D;
+        font-weight: bold;
+        text-align: center;
+        width: 80px;
+        padding: 3px;
+    }
+
+    .etiquette{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        top: 42px;
+    }
+
+   .etiquette1 p{
+         width: 80px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 145px;
+        right: 20px;
+        text-align: center;
+        padding: 3px;
+        background-color: #99e2d0;
+        border-radius: 2px;
+        color: #238064;
+    }
+    .etiquette1{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        bottom: 235px;
+    }
+
+     .heart i{
+        font-size: 25px
+    }
+    
+    
+
+    /* footer */
+    footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logof h3{
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+
+    .proposition{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .mention{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+
+    .proposition .icone{
+        font-size: 12px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+        transition: 1s ;
+       
+    }
+
+    .lien a{
+        padding-left: 13px;
+    }
+
+    footer a:hover{
+        color: var(--violet);
+    }
   }
 
-  .description p{
-      /* décalement de la 2e ligne du titre avec text align et width */
-      padding-top: 10px;
-      text-align: center;
-      margin: auto;
-      width: 80%;
-      
-  }
-
-  .button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 25px;
-  }
-  button{
-      background: linear-gradient(to top, #9256dc, #ff79d9);
-      border: none;
-     padding: 14px 14px;
-     border-radius: 30px;
-     box-shadow: 0px 2px 8px #00000069;
-  }
-
-  
-
-  .button a{
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-  }
 
 
-
-  /* section fonctionnement */
-
-  .fonctionnement {
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: space-around; 
-      padding-top: 25px;
-       padding-left: 30px;
-  }
-
-  .choix-restaurant:hover{
-    background-color: #f5edff;
-  }
-
-
-  .choix-restaurant:hover
-  .icone{
-    color: var(--violet);
-  }
-
-
-   .titre-fonctionnement{
-      padding-top: 40px;
-      padding-left: 20px;
-      text-align: center;
-  }
-
-
-  .choix-restaurant{
-      display: flex;
-      background: #f6f6f6;
-      border: 1px solid #f6f6f6 ;
-      border-radius: 15px;
-      margin-bottom:20px ;
-      padding: 25px 5px 20px 5px;
-      width: 22%;
-      box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-      flex-wrap: wrap;
-  }
-
-   .numero p{
-       border: 1px solid var(--violet) ;
-       background: var(--violet);
-       color: white;
-       border-radius: 50%;
-       padding: 2px 8px 2px 8px;
-       position: relative;
-       right: 15px;
-  }
-
-  .choix-restaurant .icone{
-      color: #939393;
-      padding-left: 10px;
-      padding-right: 25px;
-      font-size: 20px;
-  }
-
-  .choix h4{
-      font-size: 18px;
-  }
-
-  
-
-  /* section restaurant */
-  .restaurant{
-      background: #f6f6f6;
-      margin-top: 8%;
-      padding-bottom: 5%;
-  }
-  .restaurant h2{
-    text-align: center;
-      padding-left: 20px;
-      padding-top: 8%;
-  }
-
-  .img img{
-      width: 100%;
-      height: 165px;
-      object-fit: cover;
-      border-radius: 10px 10px 0px 0px;
-  }
-
-  .description2{
-      display: flex;
-      justify-content: space-between;
-      background: white;
-      padding: 10px 25px 15px 0px;
-      border-radius: 10px;
-  }
-
-  .description2 .titre{
-      padding-left: 20px;
-  }
-
-
-  .card{
-  margin: 0px 20px 60px 20px;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  border-radius: 10px;
-  }  
-
-  .etiquette p {
-      border: 1px solid var(--bleu);
-      background-color: var(--bleu);
-      color: #0A8D6D;
-      font-weight: bold;
-      text-align: center;
-      width: 80px;
-      padding: 3px;
-  }
-
-  .etiquette{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      top: 42px;
-  }
-
- .etiquette1 p{
-       width: 80px;
-      font-weight: bold;
-      position: absolute;
-      bottom: 145px;
-      right: 20px;
-      text-align: center;
-      padding: 3px;
-      background-color: #99e2d0;
-      border-radius: 2px;
-      color: #238064;
-  }
-  .etiquette1{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      bottom: 235px;
-  }
-
-   .heart i{
-      font-size: 25px
-  }
-  
-  
-
-  /* footer */
-  footer {
-      background-color: #353535;
-      color:white ;
-      padding-left: 25px;
-      padding-top: 25px;
-  }
-
-  .logof h3{
-      display: flex;
-      justify-content: center;
-      color:white;
-      font-family: 'Shrikhand', cursive;
-      padding-bottom: 20px;
-  }
-
-  .proposition{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10px;
-  }
-
-  .mention{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10px;
-      font-weight: 300;
-  }
-  
-  .contact{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 35px;
-      font-weight: 300;
-  }
-
-  .proposition .icone{
-      font-size: 12px;
-  }
-
-  footer a{
-      text-decoration: none;
-      color: white;
-  }
-
-  .lien a{
-      padding-left: 13px;
-  }
-}
-
-
-
-
-/* mobile */
+ 
+  /* mobile */
 @media (max-width:767px){
 
-  /* header */
-  header{
-      border-bottom: 2px solid rgb(206, 206, 206);
-      box-shadow: 0px 2px 2px #bdbdbd;
-  }
-   .logo img{
-      width: 140px;
-  }
+    /* header */
+    header{
+        border-bottom: 2px solid rgb(206, 206, 206);
+        box-shadow: 0px 2px 2px #bdbdbd;
+    }
+     .logo img{
+        width: 140px;
+    }
 
-  .logo{
-      display: flex;
-     justify-content: center;
-      padding: 15px;
-  }
-
-
-
-  /* section ville */
-  .ville{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 15px;
-      background:#eaeaea ;
-      padding-bottom: 15px;
-  }
-
-  .map{
-      margin-right: 15px;
-  }
-
-  
-
-  /* section reservation */
-  .reservation{
-      background: #f6f6f6;
-      padding-bottom: 50px;
-  }
-  
-  .reservation .titre{
-       /* décalement de la 2e ligne du titre avec text align et width */
-      text-align: center;
-      margin: auto;
-      width: 70%;
-      padding-top: 40px;
-  }
-
-  .description p{
-      /* décalement de la 2e ligne du titre avec text align et width */
-      padding-top: 10px;
-      text-align: center;
-      margin: auto;
-      width: 80%; 
-  }
-
-  .button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 25px;
-  }
-  button{
-      background: linear-gradient(to top, #9256dc, #ff79d9);
-      border: none;
-     padding: 14px 14px;
-     border-radius: 30px;
-     box-shadow: 0px 2px 8px #00000069;
-  }
-
-  .button a{
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-  }
-
-
-
-  /* section fonctionnement */
-   .titre-fonctionnement{
-      padding-top: 40px;
-      padding-left: 20px;
-  }
-  .fonctionnement {
-  padding-top: 25px;
-   padding-left: 30px;
-  }
-
-  .choix-restaurant:hover{
-      background-color: #f5edff;
+    .logo{
+        display: flex;
+       justify-content: center;
+        padding: 15px;
     }
 
 
-    .choix-restaurant:hover
-    .icone{
-      color: var(--violet);
+
+    /* section ville */
+    .ville{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        background:#eaeaea ;
+        padding-bottom: 15px;
     }
 
-  .choix-restaurant{
-      display: flex;
-      background: #f6f6f6;
-      border: 1px solid #f6f6f6 ;
-      border-radius: 15px;
-      margin-bottom:20px ;
-      padding: 25px 5px 20px 5px;
-      width: 94%;
-      box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  }
+    .map{
+        margin-right: 15px;
+    }
 
-   .numero p{
-       border: 1px solid var(--violet) ;
-       background: var(--violet);
-       color: white;
-       border-radius: 50%;
-       padding: 2px 8px 2px 8px;
-       position: relative;
-       right: 15px;
-  }
+    
 
-  .choix-restaurant .icone{
-      color: #939393;
-      padding-left: 10px;
-      padding-right: 25px;
-      font-size: 20px;
-  }
+    /* section reservation */
+    .reservation{
+        background: #f6f6f6;
+        padding-bottom: 50px;
+    }
+    
+    .reservation .titre{
+         /* décalement de la 2e ligne du titre avec text align et width */
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        padding-top: 40px;
+    }
 
-  .choix h4{
-      font-size: 18px;
-  }
+    .description p{
+        /* décalement de la 2e ligne du titre avec text align et width */
+        padding-top: 10px;
+        text-align: center;
+        margin: auto;
+        width: 80%; 
+    }
 
-  
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 14px 14px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
 
-  /* section restaurant */
-  .restaurant{
-      background: #f6f6f6;
-      margin-top: 20%;
-      padding-bottom: 15%;
-  }
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+    }
 
-  .restaurant h2{
-      padding-left: 20px;
-      padding-top: 8%;
-  }
 
-  .img img{
-      width: 100%;
-      height: 165px;
-      object-fit: cover;
-      border-radius: 10px 10px 0px 0px;
-  }
 
-  .description2{
-      display: flex;
-      justify-content: space-between;
-      background: white;
-      padding: 10px 25px 15px 0px;
-      border-radius: 10px;
-  }
+    /* section fonctionnement */
+     .titre-fonctionnement{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+    .fonctionnement {
+    padding-top: 25px;
+     padding-left: 30px;
+    }
 
-  .description2 .titre{
-      padding-left: 20px;
-  }
-
-  .card{
-  margin: 0px 20px 18px 20px;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  border-radius: 10px;
-  }  
-  
-
-  .etiquette p {
-      border: 1px solid var(--bleu);
-      background-color: var(--bleu);
-      color: #0A8D6D;
-      font-weight: bold;
-      text-align: center;
-      width: 80px;
-      padding: 3px;
-  }
-
-  .etiquette{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      top: 42px;
-  }
-
- .etiquette1 p{
-       width: 80px;
-      font-weight: bold;
-      position: absolute;
-      bottom: 145px;
-      right: 20px;
-      text-align: center;
-      padding: 3px;
-      background-color: #99e2d0;
-      border-radius: 2px;
-      color: #238064;
-  }
-  .etiquette1{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      bottom: 235px;
-  }
-
-   .heart i{
-      font-size: 25px
-  }
+    .choix-restaurant:hover{
+        background-color: #f5edff;
+      }
   
   
+      .choix-restaurant:hover
+      .icone{
+        color: var(--violet);
+      }
 
-  /* footer */
-  footer {
-      background-color: #353535;
-      color:white ;
-      padding-left: 25px;
-      padding-top: 25px;
-  }
+    .choix-restaurant{
+        display: flex;
+        background: #f6f6f6;
+        border: 1px solid #f6f6f6 ;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 25px 5px 20px 5px;
+        width: 94%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    }
 
-  .logof h3{
-      color:white;
-      font-family: 'Shrikhand', cursive;
-      padding-bottom: 20px;
-  }
+     .numero p{
+         border: 1px solid var(--violet) ;
+         background: var(--violet);
+         color: white;
+         border-radius: 50%;
+         padding: 2px 8px 2px 8px;
+         position: relative;
+         right: 15px;
+    }
 
-  .proposition{
-      display: flex;
-      padding-bottom: 10px;
-  }
+    .choix-restaurant .icone{
+        color: #939393;
+        padding-left: 10px;
+        padding-right: 25px;
+        font-size: 20px;
+    }
 
-  .mention{
-      padding-bottom: 10px;
-      font-weight: 300;
-  }
-  
-  .contact{
-      padding-bottom: 35px;
-      font-weight: 300;
-  }
+    .choix h4{
+        font-size: 18px;
+    }
 
-  .proposition .icone{
-      font-size: 12px;
-  }
+    
 
-  footer a{
-      text-decoration: none;
-      color: white;
-  }
+    /* section restaurant */
+    .restaurant{
+        background: #f6f6f6;
+        margin-top: 20%;
+        padding-bottom: 15%;
+    }
 
-  .lien a{
-      padding-left: 13px;
-  }
+    .restaurant h2{
+        padding-left: 20px;
+        padding-top: 8%;
+    }
 
-}
+    .img img{
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .description2{
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding: 10px 25px 15px 0px;
+        border-radius: 10px;
+    }
+
+    .description2 .titre{
+        padding-left: 20px;
+    }
+
+    .card{
+    margin: 0px 20px 18px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    border-radius: 10px;
+    }  
+    
+
+    .etiquette p {
+        border: 1px solid var(--bleu);
+        background-color: var(--bleu);
+        color: #0A8D6D;
+        font-weight: bold;
+        text-align: center;
+        width: 80px;
+        padding: 3px;
+    }
+
+    .etiquette{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        top: 42px;
+    }
+
+   .etiquette1 p{
+         width: 80px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 145px;
+        right: 20px;
+        text-align: center;
+        padding: 3px;
+        background-color: #99e2d0;
+        border-radius: 2px;
+        color: #238064;
+    }
+    .etiquette1{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        bottom: 235px;
+    }
+
+     .heart i{
+        font-size: 25px
+    }
+    
+    
+
+    /* footer */
+    footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logof h3{
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+
+    .proposition{
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .mention{
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+
+    .proposition .icone{
+        font-size: 12px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .lien a{
+        padding-left: 13px;
+    }
+
+ }
 
 
 
 
+ 
 
 
-
-/* tablette */
+ /* tablette */
 @media (min-width:768px) and (max-width:991px){
 
-  /* header */
-  header{
-      border-bottom: 2px solid rgb(206, 206, 206);
-      box-shadow: 0px 2px 2px #bdbdbd;
-  }
-   .logo img{
-      width: 140px;
-  }
+    /* header */
+    header{
+        border-bottom: 2px solid rgb(206, 206, 206);
+        box-shadow: 0px 2px 2px #bdbdbd;
+    }
+     .logo img{
+        width: 140px;
+    }
 
-  .logo{
-      display: flex;
-     justify-content: center;
-      padding: 15px;
-  }
-
-
-
-  /* section ville */
-  .ville{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 15px;
-      background:#eaeaea ;
-      padding-bottom: 15px;
-  }
-
-  .map{
-      margin-right: 15px;
-  }
-
-  
-
-  /* section reservation */
-  .reservation{
-      background: #f6f6f6;
-      padding-bottom: 50px;
-  }
-  
-  .reservation .titre{
-       /* décalement de la 2e ligne du titre avec text align et width */
-      text-align: center;
-      margin: auto;
-      width: 70%;
-      padding-top: 40px;
-  }
-
-  .description p{
-      /* décalement de la 2e ligne du titre avec text align et width */
-      padding-top: 10px;
-      text-align: center;
-      margin: auto;
-      width: 80%;
-      
-  }
-
-  .button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 25px;
-  }
-  button{
-      background: linear-gradient(to top, #9256dc, #ff79d9);
-      border: none;
-     padding: 14px 14px;
-     border-radius: 30px;
-     box-shadow: 0px 2px 8px #00000069;
-  }
-
-  .button a{
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-  }
-
-
-
-  /* section fonctionnement */
-
-  .fonctionnement {
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: space-around; 
-      padding-top: 25px;
-       padding-left: 30px;
-
-  }
-   .titre-fonctionnement{
-      padding-top: 40px;
-      padding-left: 20px;
-  }
-
-  .choix-restaurant:hover{
-      background-color: #f5edff;
+    .logo{
+        display: flex;
+       justify-content: center;
+        padding: 15px;
     }
 
 
-    .choix-restaurant:hover
-    .icone{
-      color: var(--violet);
+
+    /* section ville */
+    .ville{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        background:#eaeaea ;
+        padding-bottom: 15px;
+    }
+
+    .map{
+        margin-right: 15px;
+    }
+
+    
+
+    /* section reservation */
+    .reservation{
+        background: #f6f6f6;
+        padding-bottom: 50px;
+    }
+    
+    .reservation .titre{
+         /* décalement de la 2e ligne du titre avec text align et width */
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        padding-top: 40px;
+    }
+
+    .description p{
+        /* décalement de la 2e ligne du titre avec text align et width */
+        padding-top: 10px;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+    button{
+        background: linear-gradient(to top, #9256dc, #ff79d9);
+        border: none;
+       padding: 14px 14px;
+       border-radius: 30px;
+       box-shadow: 0px 2px 8px #00000069;
+    }
+
+    .button a{
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
     }
 
 
-  .choix-restaurant{
-      display: flex;
-      background: #f6f6f6;
-      border: 1px solid #f6f6f6 ;
-      border-radius: 15px;
-      margin-bottom:20px ;
-      padding: 25px 5px 20px 5px;
-      width: 45%;
-      box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-      flex-wrap: wrap;
-  }
 
-   .numero p{
-       border: 1px solid var(--violet) ;
-       background: var(--violet);
-       color: white;
-       border-radius: 50%;
-       padding: 2px 8px 2px 8px;
-       position: relative;
-       right: 15px;
-  }
+    /* section fonctionnement */
 
-  .choix-restaurant .icone{
-      color: #939393;
-      padding-left: 10px;
-      padding-right: 25px;
-      font-size: 20px;
-  }
+    .fonctionnement {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        padding-top: 25px;
+         padding-left: 30px;
 
-  .choix h4{
-      font-size: 18px;
-  }
+    }
+     .titre-fonctionnement{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
 
-  
-
-  /* section restaurant */
-  .restaurant{
-      background: #f6f6f6;
-      margin-top: 10%;
-      padding-bottom: 15%;
-  }
-  .restaurant h2{
-      padding-left: 20px;
-      padding-top: 8%;
-  }
-
-  .img img{
-      width: 100%;
-      height: 165px;
-      object-fit: cover;
-      border-radius: 10px 10px 0px 0px;
-  }
-
-  .description2{
-      display: flex;
-      justify-content: space-between;
-      background: white;
-      padding: 10px 25px 15px 0px;
-      border-radius: 10px;
-  }
-
-  .description2 .titre{
-      padding-left: 20px;
-  }
-
-
-  .card{
-  margin: 0px 20px 18px 20px;
-  box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-  border-radius: 10px;
-  }  
-
-  .etiquette p {
-      border: 1px solid var(--bleu);
-      background-color: var(--bleu);
-      color: #0A8D6D;
-      font-weight: bold;
-      text-align: center;
-      width: 80px;
-      padding: 3px;
-  }
-
-  .etiquette{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      top: 42px;
-  }
-
- .etiquette1 p{
-       width: 80px;
-      font-weight: bold;
-      position: absolute;
-      bottom: 145px;
-      right: 20px;
-      text-align: center;
-      padding: 3px;
-      background-color: #99e2d0;
-      border-radius: 2px;
-      color: #238064;
-  }
-  .etiquette1{
-      display: flex;
-      justify-content: flex-end;
-       padding-right:40px;
-      position: relative;
-      bottom: 235px;
-  }
-
-   .heart i{
-      font-size: 25px
-  }
+    .choix-restaurant:hover{
+        background-color: #f5edff;
+      }
   
   
+      .choix-restaurant:hover
+      .icone{
+        color: var(--violet);
+      }
 
-  /* footer */
-  footer {
-      background-color: #353535;
-      color:white ;
-      padding-left: 25px;
-      padding-top: 25px;
-  }
-
-  .logof h3{
-      display: flex;
-      justify-content: center;
-      color:white;
-      font-family: 'Shrikhand', cursive;
-      padding-bottom: 20px;
-  }
-
-  .proposition{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10px;
-  }
-
-  .mention{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 10px;
-      font-weight: 300;
-  }
   
-  .contact{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 35px;
-      font-weight: 300;
-  }
+    .choix-restaurant{
+        display: flex;
+        background: #f6f6f6;
+        border: 1px solid #f6f6f6 ;
+        border-radius: 15px;
+        margin-bottom:20px ;
+        padding: 25px 5px 20px 5px;
+        width: 45%;
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+        flex-wrap: wrap;
+    }
 
-  .proposition .icone{
-      font-size: 12px;
-  }
+     .numero p{
+         border: 1px solid var(--violet) ;
+         background: var(--violet);
+         color: white;
+         border-radius: 50%;
+         padding: 2px 8px 2px 8px;
+         position: relative;
+         right: 15px;
+    }
 
-  footer a{
-      text-decoration: none;
-      color: white;
-  }
+    .choix-restaurant .icone{
+        color: #939393;
+        padding-left: 10px;
+        padding-right: 25px;
+        font-size: 20px;
+    }
 
-  .lien a{
-      padding-left: 13px;
-  }
+    .choix h4{
+        font-size: 18px;
+    }
 
-}
+    
+
+    /* section restaurant */
+    .restaurant{
+        background: #f6f6f6;
+        margin-top: 10%;
+        padding-bottom: 15%;
+    }
+    .restaurant h2{
+        padding-left: 20px;
+        padding-top: 8%;
+    }
+
+    .img img{
+        width: 100%;
+        height: 165px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .description2{
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding: 10px 25px 15px 0px;
+        border-radius: 10px;
+    }
+
+    .description2 .titre{
+        padding-left: 20px;
+    }
 
 
+    .card{
+    margin: 0px 20px 18px 20px;
+    box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+    border-radius: 10px;
+    }  
+
+    .etiquette p {
+        border: 1px solid var(--bleu);
+        background-color: var(--bleu);
+        color: #0A8D6D;
+        font-weight: bold;
+        text-align: center;
+        width: 80px;
+        padding: 3px;
+    }
+
+    .etiquette{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        top: 42px;
+    }
+
+   .etiquette1 p{
+         width: 80px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 145px;
+        right: 20px;
+        text-align: center;
+        padding: 3px;
+        background-color: #99e2d0;
+        border-radius: 2px;
+        color: #238064;
+    }
+    .etiquette1{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+        position: relative;
+        bottom: 235px;
+    }
+
+     .heart i{
+        font-size: 25px
+    }
+    
+    
+
+    /* footer */
+    footer {
+        background-color: #353535;
+        color:white ;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+
+    .logof h3{
+        display: flex;
+        justify-content: center;
+        color:white;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 20px;
+    }
+
+    .proposition{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .mention{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 35px;
+        font-weight: 300;
+    }
+
+    .proposition .icone{
+        font-size: 12px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .lien a{
+        padding-left: 13px;
+    }
+
+ }
 
 
