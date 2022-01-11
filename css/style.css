@@ -15,23 +15,148 @@
     font-family: 'Roboto', sans-serif;
   }
 
-   .heart:hover .empty{
-    animation: full 350ms ease-in-out forwards alternate;
+  footer a{
+    text-decoration: none;
+    color: white;
+    transition: 1s ; 
 }
-@keyframes full{
-  
-    100% {
-        font-weight: 900; 
-        /*niveaux de graisse à l'interieur du coeur*/
-        background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
-        /* linear-gradient = dégradé. */
-        background-clip: text;
-        /* met la couleur uniquement dans le coeur */
-        -webkit-text-fill-color: transparent; 
-        /* remplace la couleur noir à l'interieur du coeur */
-        
+
+footer a:hover{
+    color: var(--violet);
+}
+
+  /* animation */
+
+  /* animation du coeur */
+
+   .heart:hover .empty{
+    animation: full 350ms ease-in-out forwards ;
     }
-}         
+
+    @keyframes full{
+ 
+        100% {
+            font-weight: 900; 
+            /*niveaux de graisse à l'interieur du coeur*/
+            background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
+            /* linear-gradient = dégradé. */
+            background-clip: text;
+            /* met la couleur uniquement dans le coeur */
+            -webkit-text-fill-color: transparent; 
+            /* remplace la couleur noir à l'interieur du coeur */
+            
+        }
+} 
+
+/* animation du bouton */
+
+    button:hover{
+    transform: scale(1.05);
+    animation: dark-shadow 5s forwards;
+    transition: transform 350ms;
+    opacity: 0.7;
+    }
+    @keyframes dark-shadow{
+        0% {
+            box-shadow: 0.5rem 0.5rem 1rem #bdbdbd;
+        }
+        100% {
+            box-shadow: 0.5rem 0.5rem 1rem #8a8a8a;
+        }
+    }
+
+    /* page de chargement */
+    .loader{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        /* flex-direction: column; */
+        z-index: 1;
+        background-color: var(--bleu);
+        /* opacity: 1; */
+        animation: background-fixed 3s;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @keyframes background-fixed{
+        0%{
+            visibility: visible;
+        }
+        100% {
+            visibility: hidden;
+        }
+    
+    }
+    
+    .bg{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        animation: animate 2s ease-in-out;
+    }
+
+   .loader h2{
+        color: #fff;
+         z-index: 1;
+        font-size: 6em;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    @keyframes animate{
+        0%
+        {
+            transform: scaleX(0);
+            transform-origin: left;
+            background: var(--rose);
+        }
+
+        25%
+        {
+            transform: scaleX(1);
+            transform-origin: left;
+            background: var(--rose);
+        }
+
+      
+
+        50%
+        {
+            transform: scaleX(1);
+            transform-origin: right;
+            background: var(--rose);
+        }
+
+
+        
+        75%
+        {
+            transform: scaleX(1);
+            transform-origin: left;
+            background: var(--violet);
+        }
+
+        100%
+        {
+            transform: scaleX(0);
+            transform-origin: left;
+            background: var(--violet);
+        }
+    }
+
+    /* mediaqueries de la page de chargement */
+
+ @media (max-width:556px){
+    .loader h2{
+        font-size: 3em;
+    }
+
+ }
+
+   
+
+  
 
     /* pc */
   @media (min-width:991px){
@@ -300,24 +425,13 @@
         font-size: 12px;
     }
 
-    footer a{
-        text-decoration: none;
-        color: white;
-        transition: 1s ;
-       
-    }
-
     .lien a{
         padding-left: 13px;
     }
 
-    footer a:hover{
-        color: var(--violet);
-    }
   }
 
-
-
+ 
  
   /* mobile */
 @media (max-width:767px){
