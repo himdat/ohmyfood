@@ -43,6 +43,23 @@
     }
   }
 
+  /* animation du bouton */
+
+  button:hover{
+    transform: scale(1.05);
+    animation: dark-shadow 5s forwards;
+    transition: transform 350ms;
+    opacity: 0.7;
+    }
+    @keyframes dark-shadow{
+        0% {
+            box-shadow: 0.5rem 0.5rem 1rem #bdbdbd;
+        }
+        100% {
+            box-shadow: 0.5rem 0.5rem 1rem #8a8a8a;
+        }
+    }
+
   /* heart */
  .icone:hover .empty{
     animation: full 350ms ease-in-out forwards alternate;
