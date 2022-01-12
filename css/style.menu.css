@@ -15,16 +15,16 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  /* les animations */
-/* 
-  apparition des menus de manière progressive */
+  /* les animations cards*/
 
   .anim1{
-    animation: menu 1s ease-in-out 0.0s 1 normal ;
+    animation: menu 1s ease-in-out 0.0s 1 normal ; 
+    /* ease-in-out : Le départ et la fin sont lents */
 }
 
 .anim2{
     animation: menu 1s ease-in-out 0.1s 1 normal ;
+    /* normal= direction */
 }
 
 .anim3{
@@ -36,21 +36,26 @@
       opacity: 0;
       transform: translateY(20px);
     }
+    /* disparition et apparition */
   
     100% {
       opacity: 1;
       transform: translateY(0);
     }
+    /* apparition vers le haut avec la vitesse */
   }
 
   /* animation du bouton */
 
-  button:hover{
-    transform: scale(1.05);
-    animation: dark-shadow 5s forwards;
-    transition: transform 350ms;
-    opacity: 0.7;
+    button:hover{
+        transform: scale(1.05);
+        /* grossis bouton */
+        animation: dark-shadow forwards;
+        transition: transform 350ms;
+        /* temps du zoom */
+        opacity: 0.7;
     }
+    
     @keyframes dark-shadow{
         0% {
             box-shadow: 0.5rem 0.5rem 1rem #bdbdbd;
@@ -62,20 +67,21 @@
 
   /* heart */
  .icone:hover .empty{
-    animation: full 350ms ease-in-out forwards alternate;
+    animation: full 350ms ease-in-out forwards ;
 }
 @keyframes full{
     0% {
         opacity: 0;
     }
-    100% {
-        font-weight: 900;
-        opacity: 1;
-        background: #4a4a9e;
-        background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+            100% {
+            font-weight: 900; 
+            /*niveaux de graisse à l'interieur du coeur*/
+            background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
+            /* linear-gradient = dégradé. */
+            background-clip: text;
+            /* met la couleur uniquement dans le coeur */
+            -webkit-text-fill-color: transparent; 
+            /* remplace la couleur noir à l'interieur du coeur */
     }
 
 } 
@@ -492,8 +498,6 @@
     }
 
     
-   
-
     .menu{
         padding-top: 10%;
         padding-left: 5%;

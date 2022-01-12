@@ -51,11 +51,14 @@ footer a:hover{
 /* animation du bouton */
 
     button:hover{
-    transform: scale(1.05);
-    animation: dark-shadow 5s forwards;
-    transition: transform 350ms;
-    opacity: 0.7;
+        transform: scale(1.05);
+        /* grossis bouton */
+        animation: dark-shadow forwards;
+        transition: transform 350ms;
+        /* temps du zoom */
+        opacity: 0.7;
     }
+
     @keyframes dark-shadow{
         0% {
             box-shadow: 0.5rem 0.5rem 1rem #bdbdbd;
