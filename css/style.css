@@ -73,12 +73,13 @@ footer a:hover{
         width: 100%;
         height: 100%;
         position: fixed;
-        /* flex-direction: column; */
+        /* prend toute la page */
         z-index: 1;
+        /* on vois pas l'accueil */
         background-color: var(--bleu);
-        /* opacity: 1; */
         animation: background-fixed 3s;
         visibility: hidden;
+        /* cacher l'animation */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -103,6 +104,7 @@ footer a:hover{
    .loader h2{
         color: #fff;
          z-index: 1;
+        /*titre dans toute colors */
         font-size: 6em;
         font-family: 'Shrikhand', cursive;
     }
@@ -111,8 +113,8 @@ footer a:hover{
         0%
         {
             transform: scaleX(0);
+            /* page pas très dynamique */
             transform-origin: left;
-            background: var(--rose);
         }
 
         25%
@@ -121,28 +123,17 @@ footer a:hover{
             transform-origin: left;
             background: var(--rose);
         }
-
-      
-
-        50%
-        {
-            transform: scaleX(1);
-            transform-origin: right;
-            background: var(--rose);
-        }
-
-
-        
+  
         75%
         {
             transform: scaleX(1);
-            transform-origin: left;
-            background: var(--violet);
+            /* impact sur le changement de couleur */
         }
 
         100%
         {
             transform: scaleX(0);
+            /* impact sur le changement de couleur */
             transform-origin: left;
             background: var(--violet);
         }
