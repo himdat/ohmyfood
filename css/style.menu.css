@@ -83,9 +83,49 @@
             -webkit-text-fill-color: transparent; 
             /* remplace la couleur noir à l'interieur du coeur */
     }
-
 } 
+ 
+/*animation du bouton favoris */
 
+  .btn-favoris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* tous ça pour le rond */
+    left: 20px;
+    /* carré vert */
+    margin: -10px 0px;
+    width: 0px;
+    /* ne soit pas visible */
+    background-color: #99e2d0;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    /* ne pas dépasser du block */
+    transition: ease-in-out 250ms;
+    /* la vitesse animation */
+  }
+
+  .choix:hover .btn-favoris {
+    width: 80px;
+    /* animation apparaisse (longeur) */
+  }
+
+  .description{
+    width: 100%;
+    /* déplacer numéro */
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 2em;
+    /* rond dans le block */
+  }
+
+  .choix:hover i {
+    transform: rotate(360deg);
+    transition-duration: 250ms;
+  }
 
     /* pc */
   @media (min-width:991px){
@@ -275,18 +315,19 @@
     
   }
 
-
-
-
     /* mobile */
+
 @media (max-width:767px){
+
     /* header */
+
     header{
         display: flex;
        justify-content: center;
     }
-  
+
     .logo{
+
         display: flex;
        align-items: center;
         padding: 15px 20px 10px 20px;
@@ -296,19 +337,19 @@
         font-family: "Shrikhand", cursive;
     }
 
-
     .logo a{
-        /* padding-right: 60px;  */
+
         position: absolute;
         left: 5%;
         color: black;
     } 
 
-
        /* section menu */
+
        .container{
         background-color: #f6f6f6;
        }
+
        .container img{
         width:100%;
     }
@@ -326,16 +367,9 @@
         display: flex;
         justify-content:center ;
         align-items: center;
-        /* padding-left: 25%; */
         font-size: 25px;
         padding-right: 10%;
     }
-
-    
-    .icone i:hover{
-        background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%); 
-    }
-   
 
     .menu{
         padding-top: 10%;
@@ -345,8 +379,6 @@
         position: relative;
         bottom: 50px;
     }
-
-  
 
     .titre2{
         padding-top: 8%;
@@ -374,18 +406,26 @@
         line-height: 150%; /*espace entre le h4 et */
     }
 
+    .description h4{
+        font-size: 14.6px;
+    }
+
+    .description p{
+        font-size: 12px;
+    }
+
     .choix .prix{
         font-weight: 600;
         align-self: flex-end;  /* pour le mettre le prix en bas */
     }
 
-    
     .button{
         text-align: center;
         padding-top: 25px;
         padding-bottom: 25px;
         padding-right: 3%;
     }
+
     button{
         background: linear-gradient(to top, #9256dc, #ff79d9);
         border: none;
@@ -398,7 +438,6 @@
         text-decoration: none;
         color: white;
     }
-
 
      /* footer */
      footer {

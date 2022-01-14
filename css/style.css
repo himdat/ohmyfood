@@ -341,8 +341,8 @@ footer a:hover{
         color: #0A8D6D;
         font-weight: bold;
         text-align: center;
-        width: 80px;
-        padding: 3px;
+        width: 75px;
+        padding: 2px;
     }
 
     .etiquette{
@@ -357,7 +357,7 @@ footer a:hover{
          width: 80px;
         font-weight: bold;
         position: absolute;
-        bottom: 145px;
+        bottom: 185px;
         right: 20px;
         text-align: center;
         padding: 3px;
