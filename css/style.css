@@ -11,6 +11,9 @@
     --bleu:#99E2D0;
   }
 
+
+
+
   body{
     font-family: 'Roboto', sans-serif;
   }
@@ -34,10 +37,15 @@ footer a:hover{
     }
 
     @keyframes full{
+
+        0% {
+            opacity: 0;
+        }
  
         100% {
             font-weight: 900; 
             /*niveaux de graisse à l'interieur du coeur*/
+            opacity: 1;
             background: linear-gradient(201deg, #4a4a9e 0%, #9356dc 31%, #ff79da 100%);
             /* linear-gradient = dégradé. */
             background-clip: text;
@@ -425,7 +433,16 @@ footer a:hover{
 
   }
 
- 
+  @media (min-width:991px) and (max-width:1332px){ 
+    body{
+        background-color: #FF79DA;
+
+    }
+
+    .choix-restaurant{
+        width: 30%;
+    }
+}
  
   /* mobile */
 @media (max-width:767px){
