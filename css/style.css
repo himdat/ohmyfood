@@ -11,9 +11,6 @@
     --bleu:#99E2D0;
   }
 
-
-
-
   body{
     font-family: 'Roboto', sans-serif;
   }
@@ -21,18 +18,21 @@
   footer a{
     text-decoration: none;
     color: white;
-    transition: 1s ; 
+    /* transition: 1s ;  */
 }
 
 footer a:hover{
     color: var(--violet);
+}
+.ville h4{
+    font-weight: normal;
 }
 
   /* animation */
 
   /* animation du coeur */
 
-   .heart:hover .empty{
+  .heart:hover .empty{
     animation: full 350ms ease-in-out forwards ;
     }
 
@@ -77,6 +77,7 @@ footer a:hover{
     }
 
     /* page de chargement */
+
     .loader{
         width: 100%;
         height: 100%;
@@ -106,13 +107,14 @@ footer a:hover{
         position:absolute;
         width: 100%;
         height: 100%;
-        animation: animate 2s ease-in-out;
+        /* h et w avoir toutes les couleurs */
+        animation: animate 2s ;
     }
 
    .loader h2{
         color: #fff;
          z-index: 1;
-        /*titre dans toute colors */
+        /*titre apparait dans toute colors */
         font-size: 6em;
         font-family: 'Shrikhand', cursive;
     }
@@ -156,13 +158,11 @@ footer a:hover{
 
  }
 
-   
-
-  
-
     /* pc */
+    
   @media (min-width:991px){
-      /* header */
+
+      /* header */  
     header{
         border-bottom: 2px solid rgb(206, 206, 206);
         box-shadow: 0px 2px 2px #bdbdbd;
@@ -177,8 +177,6 @@ footer a:hover{
         padding: 15px;
     }
 
-
-
     /* section ville */
     .ville{
         display: flex;
@@ -192,8 +190,6 @@ footer a:hover{
     .map{
         margin-right: 15px;
     }
-
-    
 
     /* section reservation */
     .reservation{
@@ -232,18 +228,13 @@ footer a:hover{
        box-shadow: 0px 2px 8px #00000069;
     }
 
-
-
     .button a{
         text-decoration: none;
         color: white;
         font-weight: 600;
     }
 
-
-
     /* section fonctionnement */
-
     .fonctionnement {
         display: flex;
         flex-wrap: wrap; 
@@ -256,12 +247,10 @@ footer a:hover{
       background-color: #f5edff;
     }
 
-
     .choix-restaurant:hover
     .icone{
       color: var(--violet);
     }
-
 
      .titre-fonctionnement{
         padding-top: 40px;
@@ -269,7 +258,6 @@ footer a:hover{
         text-align: center;
     }
 
-  
     .choix-restaurant{
         display: flex;
         background: #f6f6f6;
@@ -303,8 +291,6 @@ footer a:hover{
         font-size: 18px;
     }
 
-    
-
     /* section restaurant */
     .restaurant{
         background: #f6f6f6;
@@ -317,9 +303,25 @@ footer a:hover{
         padding-top: 8%;
     }
 
+    .column1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    }
+
+    .column2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
+        border-radius: 10px;
+        }  
+
     .img img{
-        width: 100%;
-        height: 165px;
+         width: 500px;
+        height: 430px; 
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
     }
@@ -336,57 +338,55 @@ footer a:hover{
         padding-left: 20px;
     }
 
+    .etiquette{
+        display: none;
+    }
+    .etiquettepc{
+        display: flex;
+        justify-content: flex-end;
+         padding-right:40px;
+         position: relative;
+         bottom: 235px;
+    }
 
-    .card{
-    margin: 0px 20px 60px 20px;
-    box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
-    border-radius: 10px;
-    }  
-
-    .etiquette p {
+    .etiquettepc p {
         border: 1px solid var(--bleu);
         background-color: var(--bleu);
         color: #0A8D6D;
         font-weight: bold;
         text-align: center;
-        width: 75px;
-        padding: 2px;
+        width: 80px;
+        position: absolute;
+        bottom: -280px;
+        left: 79%;
+        padding: 3px;
     }
 
-    .etiquette{
+        .etiquette1{
         display: flex;
         justify-content: flex-end;
-         padding-right:40px;
+        padding-right:40px;
         position: relative;
-        top: 42px;
-    }
+        bottom: 235px;
+        }
 
-   .etiquette1 p{
-         width: 80px;
+        .etiquette1 p{
+        width: 80px;
         font-weight: bold;
         position: absolute;
-        bottom: 185px;
+        bottom: -275px;
         right: 20px;
         text-align: center;
         padding: 3px;
         background-color: #99e2d0;
         border-radius: 2px;
         color: #238064;
-    }
-    .etiquette1{
-        display: flex;
-        justify-content: flex-end;
-         padding-right:40px;
-        position: relative;
-        bottom: 235px;
-    }
+        }
 
      .heart i{
         font-size: 25px
     }
     
-    
-
     /* footer */
     footer {
         background-color: #353535;
@@ -433,18 +433,15 @@ footer a:hover{
 
   }
 
-  @media (min-width:991px) and (max-width:1332px){ 
-    body{
-        background-color: #FF79DA;
+  @media (min-width: 991px) and (max-width: 1332px){
 
-    }
-
-    .choix-restaurant{
+    .choix-restaurant {
         width: 30%;
-    }
-}
+      }
+  }
  
   /* mobile */
+
 @media (max-width:767px){
 
     /* header */
@@ -462,8 +459,6 @@ footer a:hover{
         padding: 15px;
     }
 
-
-
     /* section ville */
     .ville{
         display: flex;
@@ -477,8 +472,6 @@ footer a:hover{
     .map{
         margin-right: 15px;
     }
-
-    
 
     /* section reservation */
     .reservation{
@@ -522,13 +515,12 @@ footer a:hover{
         font-weight: 600;
     }
 
-
-
     /* section fonctionnement */
      .titre-fonctionnement{
         padding-top: 40px;
         padding-left: 20px;
     }
+
     .fonctionnement {
     padding-top: 25px;
      padding-left: 30px;
@@ -537,7 +529,6 @@ footer a:hover{
     .choix-restaurant:hover{
         background-color: #f5edff;
       }
-  
   
       .choix-restaurant:hover
       .icone{
@@ -576,8 +567,6 @@ footer a:hover{
         font-size: 18px;
     }
 
-    
-
     /* section restaurant */
     .restaurant{
         background: #f6f6f6;
@@ -615,7 +604,6 @@ footer a:hover{
     border-radius: 10px;
     }  
     
-
     .etiquette p {
         border: 1px solid var(--bleu);
         background-color: var(--bleu);
@@ -629,16 +617,16 @@ footer a:hover{
     .etiquette{
         display: flex;
         justify-content: flex-end;
-         padding-right:40px;
+        padding-right:40px;
         position: relative;
         top: 42px;
     }
 
    .etiquette1 p{
-         width: 80px;
+        width: 80px;
         font-weight: bold;
         position: absolute;
-        bottom: 145px;
+        bottom: -275px;
         right: 20px;
         text-align: center;
         padding: 3px;
@@ -649,17 +637,19 @@ footer a:hover{
     .etiquette1{
         display: flex;
         justify-content: flex-end;
-         padding-right:40px;
+        padding-right:40px;
         position: relative;
         bottom: 235px;
+    }
+
+    .etiquettepc{
+        display: none;
     }
 
      .heart i{
         font-size: 25px
     }
     
-    
-
     /* footer */
     footer {
         background-color: #353535;
@@ -704,13 +694,8 @@ footer a:hover{
 
  }
 
-
-
-
- 
-
-
  /* tablette */
+
 @media (min-width:768px) and (max-width:991px){
 
     /* header */
@@ -728,8 +713,6 @@ footer a:hover{
         padding: 15px;
     }
 
-
-
     /* section ville */
     .ville{
         display: flex;
@@ -743,8 +726,6 @@ footer a:hover{
     .map{
         margin-right: 15px;
     }
-
-    
 
     /* section reservation */
     .reservation{
@@ -789,10 +770,7 @@ footer a:hover{
         font-weight: 600;
     }
 
-
-
     /* section fonctionnement */
-
     .fonctionnement {
         display: flex;
         flex-wrap: wrap; 
@@ -810,13 +788,11 @@ footer a:hover{
         background-color: #f5edff;
       }
   
-  
       .choix-restaurant:hover
       .icone{
         color: var(--violet);
       }
 
-  
     .choix-restaurant{
         display: flex;
         background: #f6f6f6;
@@ -850,8 +826,6 @@ footer a:hover{
         font-size: 18px;
     }
 
-    
-
     /* section restaurant */
     .restaurant{
         background: #f6f6f6;
@@ -882,12 +856,15 @@ footer a:hover{
         padding-left: 20px;
     }
 
-
     .card{
     margin: 0px 20px 18px 20px;
     box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
     border-radius: 10px;
     }  
+
+    .etiquettepc{
+        display: none;
+    }
 
     .etiquette p {
         border: 1px solid var(--bleu);
@@ -911,7 +888,7 @@ footer a:hover{
          width: 80px;
         font-weight: bold;
         position: absolute;
-        bottom: 145px;
+        bottom: -275px;
         right: 20px;
         text-align: center;
         padding: 3px;
@@ -922,7 +899,7 @@ footer a:hover{
     .etiquette1{
         display: flex;
         justify-content: flex-end;
-         padding-right:40px;
+        padding-right:40px;
         position: relative;
         bottom: 235px;
     }
@@ -931,8 +908,6 @@ footer a:hover{
         font-size: 25px
     }
     
-    
-
     /* footer */
     footer {
         background-color: #353535;
@@ -977,7 +952,6 @@ footer a:hover{
         text-decoration: none;
         color: white;
     }
-
 
     .lien a{
         padding-left: 13px;

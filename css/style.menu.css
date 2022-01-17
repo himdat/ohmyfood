@@ -119,7 +119,6 @@
   .fa-check-circle {
     color: white;
     font-size: 2em;
-    /* rond dans le block */
   }
 
   .choix:hover i {
@@ -128,6 +127,7 @@
   }
 
     /* pc */
+
   @media (min-width:991px){
      /* header */
      header{
@@ -145,14 +145,12 @@
         font-family: "Shrikhand", cursive;
     }
   
-  
     .logo a{
         /* padding-right: 60px;  */
         position: absolute;
         left: 5%;
         color: black;
     } 
-  
   
        /* section menu */
        .container{
@@ -182,8 +180,6 @@
         padding-right: 10%;
     }
 
-  
-  
     .menu{
         padding-top: 4%;
         padding-left: 5%;
@@ -196,8 +192,7 @@
     .animation{
         animation: menu 1s ease-in-out 0s 1 normal forwards;
     }
-
-      
+ 
     /* @keyframes menu {
         0% {
           opacity: 0;
@@ -211,7 +206,6 @@
       }
    */
 
-  
     .titre2{
         padding-top: 2%;
         padding-bottom:2%;
@@ -222,7 +216,6 @@
         padding-bottom: 5px;
         width: 40px;
     }
-  
   
     .choix{
         display: flex;
@@ -236,14 +229,13 @@
     }
   
     .description{
-        line-height: 150%; /*espace bottom ver le bas */
+        line-height: 150%; /*sauter lignes */
     }
   
     .choix .prix{
         font-weight: 600;
-        align-self: flex-end;  /* pour le mettre le prix en bas */
+        align-self: flex-end;  /* pour mettre le prix en bas */
     }
-  
     
     .button{
         text-align: center;
@@ -262,8 +254,7 @@
         text-decoration: none;
         color: white;
     }
-  
-  
+
     /* footer */
     footer {
         background-color: #353535;
@@ -320,7 +311,6 @@
 @media (max-width:767px){
 
     /* header */
-
     header{
         display: flex;
        justify-content: center;
@@ -338,14 +328,12 @@
     }
 
     .logo a{
-
         position: absolute;
         left: 5%;
         color: black;
     } 
 
        /* section menu */
-
        .container{
         background-color: #f6f6f6;
        }
@@ -390,7 +378,7 @@
         padding-bottom: 5px;
         width: 40px;
     }
-
+ 
     .choix{
         display: flex;
         background: #ffffff;
@@ -401,17 +389,15 @@
         width: 94%;
         box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
     }
-
-    /* .choix .description{
-        
+        /* bouton favoris */
+    .choix .description{  
         white-space: nowrap;
-        /* cache text 
+        /* cache text */
         overflow: hidden;
-        change la taille de la card 
+        /* change la taille de la card  */
         text-overflow: ellipsis;
-     }  */
+     }  
 
-    
     .description h4{
         font-size: 14.6px;
     }
@@ -490,7 +476,6 @@
 
  }
 
-
  /* tablette */
 @media (min-width:768px) and (max-width:991px){
        /* header */
@@ -509,14 +494,12 @@
         font-family: "Shrikhand", cursive;
     }
 
-
     .logo a{
         /* padding-right: 60px;  */
         position: absolute;
         left: 5%;
         color: black;
     } 
-
 
        /* section menu */
        .container{
@@ -542,8 +525,7 @@
         font-size: 25px;
         padding-right: 10%;
     }
-
-    
+   
     .menu{
         padding-top: 10%;
         padding-left: 5%;
@@ -552,8 +534,6 @@
         position: relative;
         bottom: 110px;
     }
-
-
 
     .titre2{
         padding-top: 8%;
@@ -578,7 +558,7 @@
     }
 
     .description{
-        line-height: 150%; /*espace entre le h4 et */
+        line-height: 150%; /*sauter lignes */
     }
 
     .choix .prix{
@@ -586,7 +566,6 @@
         align-self: flex-end;  /* pour le mettre le prix en bas */
     }
 
-    
     .button{
         text-align: center;
         padding-top: 25px;
@@ -605,7 +584,6 @@
         text-decoration: none;
         color: white;
     }
-
 
     /* footer */
     footer {
