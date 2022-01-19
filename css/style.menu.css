@@ -82,6 +82,8 @@
             /* met la couleur uniquement dans le coeur */
             -webkit-text-fill-color: transparent; 
             /* remplace la couleur noir à l'interieur du coeur */
+            -webkit-background-clip: text;
+            /* couleur ne dépasse*/
     }
 } 
  
@@ -218,6 +220,7 @@
     }
   
     .choix{
+        cursor: pointer;
         display: flex;
         background: #ffffff;
         justify-content: space-between;
@@ -380,6 +383,7 @@
     }
  
     .choix{
+        cursor: pointer;
         display: flex;
         background: #ffffff;
         justify-content: space-between;
@@ -547,6 +551,7 @@
     }
 
     .choix{
+        cursor: pointer;
         display: flex;
         background: #ffffff;
         justify-content: space-between;
