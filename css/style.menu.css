@@ -143,8 +143,8 @@
         padding: 15px 20px 10px 20px;
     }
   
-    .logo h1{
-        font-family: "Shrikhand", cursive;
+    .logo img{
+        width: 140px;
     }
   
     .logo a{
@@ -402,8 +402,13 @@
         text-overflow: ellipsis;
      }  
 
+     .description{
+        line-height: 150%; /*sauter lignes */
+    }
+
     .description h4{
         font-size: 14.6px;
+        text-overflow: ellipsis;
     }
 
     .description p{
