@@ -33,14 +33,15 @@ footer a:hover{
   /* animation du coeur */
 
   .heart:hover .empty{
-    animation: full 350ms ease-in-out forwards ;
+    animation: full 350ms forwards ;
     }
+    /* forwards: la couleur s'enleve rapidement*/ 
 
     @keyframes full{
 
         0% {
             opacity: 0;
-            
+            /* pas de couleur au début */
         }
  
         100% {
@@ -54,7 +55,7 @@ footer a:hover{
             -webkit-text-fill-color: transparent; 
             /* remplace la couleur noir à l'interieur du coeur */
             -webkit-background-clip: text;
-            /* couleur ne dépasse pas google chrome */
+            /* couleur ne dépasse pas */
   
         }
 
@@ -64,8 +65,9 @@ footer a:hover{
 
     button:hover{
         transform: scale(1.05);
-        /* grossis bouton */
+        /* zoom bouton */
         animation: dark-shadow forwards;
+        /* forwards: ombre vers l'avant */
         transition: transform 350ms;
         /* temps du zoom */
         opacity: 0.7;
@@ -73,11 +75,12 @@ footer a:hover{
 
     @keyframes dark-shadow{
         0% {
-            box-shadow: 0.5rem 0.5rem 1rem #bdbdbd;
+            box-shadow: 0.5rem 0.5rem #bdbdbd;
         }
         100% {
             box-shadow: 0.5rem 0.5rem 1rem #8a8a8a;
         }
+        /* rem: taille responsive */
     }
 
     /* page de chargement */
@@ -86,11 +89,12 @@ footer a:hover{
         width: 100%;
         height: 100%;
         position: fixed;
-        /* prend toute la page */
+        /* 3 prend toute la page */
         z-index: 1;
         /* on vois pas l'accueil */
         background-color: var(--bleu);
         animation: background-fixed 3s;
+        /* duré de l'animation */
         visibility: hidden;
         /* cacher l'animation */
         display: flex;
@@ -111,7 +115,7 @@ footer a:hover{
         position:absolute;
         width: 100%;
         height: 100%;
-        /* h et w avoir toutes les couleurs */
+        /* h et w toutes les couleurs défile*/
         animation: animate 2s ;
     }
 
@@ -127,14 +131,16 @@ footer a:hover{
         0%
         {
             transform: scaleX(0);
-            /* page pas très dynamique */
+            /* impact sur le changement de couleur */
             transform-origin: left;
+            /* rotation */
         }
 
         25%
         {
             transform: scaleX(1);
             transform-origin: left;
+            /* rotation */
             background: var(--rose);
         }
   
@@ -149,6 +155,7 @@ footer a:hover{
             transform: scaleX(0);
             /* impact sur le changement de couleur */
             transform-origin: left;
+            /* rotation */
             background: var(--violet);
         }
     }
@@ -299,6 +306,7 @@ footer a:hover{
     }
 
     /* section restaurant */
+
     .restaurant{
         background: #f6f6f6;
         margin-top: 8%;

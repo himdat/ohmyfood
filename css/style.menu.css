@@ -35,12 +35,13 @@
     0% {
       opacity: 0;
       transform: translateY(20px);
+      /* apparait bar par bar */
     }
     /* disparition et apparition */
   
     100% {
       opacity: 1;
-      transform: translateY(0);
+
     }
     /* apparition vers le haut avec la vitesse */
   }
@@ -62,7 +63,8 @@
         }
         100% {
             box-shadow: 0.5rem 0.5rem 1rem #8a8a8a;
-        }
+            /* taille responsive */
+        }  
     }
 
   /* heart */
@@ -93,13 +95,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* 3 tous ça pour le rond */
     position: relative;
-    /* tous ça pour le rond */
     left: 20px;
-    /* carré vert */
+    /* 2 carré vert */
     margin: -10px 0px;
     width: 0px;
-    /* ne soit pas visible */
+    /* ne soit pas visible sans hover */
     background-color: #99e2d0;
     border-radius: 0 15px 15px 0;
     overflow: hidden;
@@ -110,12 +112,12 @@
 
   .choix:hover .btn-favoris {
     width: 80px;
-    /* animation apparaisse (longeur) */
+    /* taille de la longeur) */
   }
 
   .description{
     width: 100%;
-    /* déplacer numéro */
+    /* déplacer*/
   }
 
   .fa-check-circle {
@@ -127,6 +129,10 @@
     transform: rotate(360deg);
     transition-duration: 250ms;
   }
+
+  footer a:hover{
+    color: var(--violet);
+    }
 
     /* pc */
 
@@ -191,23 +197,6 @@
         position: relative;
         bottom: 150px;
     }
-
-    .animation{
-        animation: menu 1s ease-in-out 0s 1 normal forwards;
-    }
- 
-    /* @keyframes menu {
-        0% {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-   */
 
     .titre2{
         padding-top: 2%;
@@ -340,7 +329,7 @@
 
        /* section menu */
 
-       /* les ... dans favoris */
+       /* animations les ... dans favoris */
        .choix p{
         text-overflow: ellipsis;
         overflow: hidden;
@@ -350,7 +339,7 @@
         text-overflow: ellipsis;
         overflow: hidden;   
        }
-
+       /* fin des ... favoris */
        .container{
         background-color: #f6f6f6;
        }
@@ -407,14 +396,14 @@
         width: 94%;
         box-shadow: 0px 5px 10px 0px rgba(194, 194, 194, 0.78);
     }
-        /* bouton favoris */
+        /* animation bouton favoris */
     .choix .description{  
         white-space: nowrap;
         /* cache text */
         overflow: hidden;
-        /* change la taille de la card  */
+        /* cache le text  */
      }  
-
+     /* fin animation bouton favoris */
      .description{
         line-height: 150%; /*sauter lignes */
     }
